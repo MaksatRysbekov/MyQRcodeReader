@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements ZXingScannerView.
     public void handleResult(Result result) {
         Log.v("handleResult" , result.getText());
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Scan result");
+        builder.setTitle("Вы успешно оплатили, Ваш пароль");
         builder.setMessage(result.getText());
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
